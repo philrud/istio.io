@@ -44,7 +44,7 @@ for migration instructions.
 L3 networks.
 TBD: LINK
 
-- **Multiple Control Planes**. Multiple Istio control plane multicluster is now supported.
+- **Multiple Control Planes**. Added support of multiple Istio control planes for multicluster environments.
 TBD: LINK
 
 ## Policies and telemetry
