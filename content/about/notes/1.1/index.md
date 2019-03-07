@@ -63,7 +63,7 @@ a richer visualization experience. See the [Kiali Task](/docs/tasks/telemetry/ki
 
     - Improved the protocol between Envoy and Mixer.
 
-- **Control Headers and Routing**. It's now possible to create adapters that can be used to influence
+- **Control Headers and Routing**. Added the option to create adapters to influence
 an incoming request's headers and routing. TBD: LINK
 
 - **Out of Process Adapters**. The out-of-process adapter functionality is now ready for production
