@@ -25,7 +25,7 @@ TBD: need full content & links
 
 - **Egress Gateway Disabled By Default**.- Egress gateway is disabled by default now.  To enable it, configure gateways.istio-egressgateway.enabled to ```true```
 
-- **Simpler Service Entry Resources**. Service entry resources are greatly simplified by reducing the need to bind virtual services to them.
+- **Simpler Service Entry Resources**. Reduced the need to bind virtual services to service entry resources greatly simplifying the resources.
 
 - TBD: note about sidecar and export_to API.
 
