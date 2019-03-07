@@ -31,7 +31,7 @@ TBD: need full content & links
 
 ## Security
 
-- **Readines and Liveness Probes**. Istio now supports Kubernetes' HTTP readiness and liveness probes when mutual TLS is enabled.
+- **Readines and Liveness Probes**. Added support of Kubernetes' HTTP readiness and liveness probes when mutual TLS is enabled.
 TBD: LINK TO DOC
 
 - **Cluster RBAC Configuration**.  Replaced the `RbacConfig` resource with the `ClusterRbacConfig` resource to implement the correct cluster scope.
