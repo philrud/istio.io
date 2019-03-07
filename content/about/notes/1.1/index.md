@@ -94,7 +94,7 @@ from Kubernetes details. Galley uses the [Mesh Configuration Protocol (MCP)](htt
 - **Verify-Install Command**. Added the [`istioctl experimental verify-install`](/docs/reference/commands/istioctl/#istioctl-experimental-verify-install) command used to verify the status of an 
 Istio installation given a specified installation YAML file.
 
-- **Deprecated Commands**. The `istioctl create`, `istioctl replace`, `istioctl get`, and `istioctl delete` commands are being deprecated. Use [`kubectl`](https://kubernetes.io/docs/tasks/tools/install-kubectl) instead.
+- **Deprecated Commands**. Deprecated the `istioctl create`, `istioctl replace`, `istioctl get`, and `istioctl delete` commands. Use the [`kubectl`](https://kubernetes.io/docs/tasks/tools/install-kubectl) equivalents instead.
 The `istioctl gen-deploy` command is also being deprecated. Use a [`helm template`](/docs/setup/kubernetes/install/helm/#option-1-install-with-helm-via-helm-template) instead.
 This command will be removed completely in the 1.2 release.
 
