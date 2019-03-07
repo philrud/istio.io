@@ -21,9 +21,13 @@ TBD: need full content & links
 
 ## Traffic management
 
-- **Allow All Outbound Traffic**. Allow all outbound traffic by default now.   To enforce no outbound traffic at mesh wide, configure ```global.outboundTrafficPolicy.mode``` to ```REGISTRY_ONLY```
+- **Allow All Outbound Traffic**. Allow all outbound traffic by default now. 
+To enforce no outbound traffic at mesh wide, configure `global.outboundTrafficPolicy.mode` to `REGISTRY_ONLY`
+TBD: presumbly in Helm?
 
-- **Egress Gateway Disabled By Default**.- Egress gateway is disabled by default now.  To enable it, configure gateways.istio-egressgateway.enabled to ```true```
+- **Egress Gateway Disabled By Default**.- Egress gateway is disabled by default now.
+To enable it, configure `gateways.istio-egressgateway.enabled` to `true`
+TBD: presumbly in Helm?
 
 - **Simpler Service Entry Resources**. Reduced the need to bind virtual services to service entry resources greatly simplifying the resources.
 
@@ -72,10 +76,14 @@ TBD: LINK
 - **Tracing Improvements**. There have been many improvements in our overall tracing story:
 
     -  You can now use 128 bit trace IDs.
+
     -  Added some enhanced deployment options for [Jaeger](https://istio.io/docs/tasks/telemetry/distributed-tracing/jaeger/)
-    and [Zipkin](https://istio.io/docs/tasks/telemetry/distributed-tracing/zipkin/).
+    and [Zipkin](https://istio.io/docs/tasks/telemetry/distributed-tracing/zipkin/). TBD: are these right links for "deployment options"?
+
     - Added support of sending trace data to [LightStep](https://preliminary.istio.io/docs/tasks/telemetry/distributed-tracing/lightstep/)
+
     - Added the option to disable tracing for Mixer-backed services entirely. TBD: ADD LINK
+
     - Added policy decision-aware tracing. TBD: LINK
 
 - **Default TCP Metrics**. Added default metrics for tracking TCP connections.
@@ -91,13 +99,13 @@ from Kubernetes details. Galley uses the [Mesh Configuration Protocol (MCP)](htt
 ## `istioctl` and `kubectl`
 
 - **Validate Command**. Added the [`istioctl validate`](/docs/reference/commands/istioctl/#istioctl-validate)
-  command for offline validation of Istio Kubernetes resources.
+command for offline validation of Istio Kubernetes resources.
 
 - **Verify-Install Command**. Added the [`istioctl experimental verify-install`](/docs/reference/commands/istioctl/#istioctl-experimental-verify-install) command to verify the status of an 
 Istio installation given a specified installation YAML file.
 
 - **Deprecated Commands**. Deprecated the `istioctl create`, `istioctl replace`, `istioctl get`, and `istioctl delete` commands. Use the [`kubectl`](https://kubernetes.io/docs/tasks/tools/install-kubectl) equivalents instead.
 Deprecated the `istioctl gen-deploy` command too. Use a [`helm template`](/docs/setup/kubernetes/install/helm/#option-1-install-with-helm-via-helm-template) instead.
-This command will be removed completely in the 1.2 release.
+These commands will be removed in the 1.2 release.
 
 - **Short Commands**. Included short commands in 'kubectl' for gateways, virtual services, destination rules and service entries. TBD: ADD LINK
