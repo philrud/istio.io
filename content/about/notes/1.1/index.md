@@ -52,7 +52,7 @@ TBD: LINK
 - **Policy Checks Off By Default**. Changed policy checks to be turned off by default which improves performance for most customer scenarios.
 TBD: LINK
 
-- **Kiali**. [Kiali](https://www.kiali.io) replaces the [Service Graph addon](https://github.com/istio/istio/issues/9066) and provides
+- **Kiali**. Replaced the Service Graph addon](https://github.com/istio/istio/issues/9066) with [Kiali](https://www.kiali.io) to provide
 a richer visualization experience. See the [Kiali Task](/docs/tasks/telemetry/kiali/) for more details.
 
 - **Reduced Overhead**. There have been several performance and scale improvements including:
