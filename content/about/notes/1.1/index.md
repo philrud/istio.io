@@ -34,7 +34,7 @@ TBD: need full content & links
 - **Readines and Liveness Probes**. Istio now supports Kubernetes' HTTP readiness and liveness probes when mutual TLS is enabled.
 TBD: LINK TO DOC
 
-- **`ClusterRbacConfig`**. The `RbacConfig` resource is being replaced with the `ClusterRbacConfig` resource to implement the correct cluster scope.
+- **Cluster RBAC Configuration**.  Replaced the `RbacConfig` resource with the `ClusterRbacConfig` resource to implement the correct cluster scope.
 Refer to our guide on [Migrating the `RbacConfig` to `ClusterRbacConfig`](/docs/setup/kubernetes/upgrading-istio#migrating-the-rbacconfig-to-clusterrbacconfig)
 for migration instructions.
 
