@@ -71,25 +71,27 @@ TBD: LINK
  
 - **Tracing Improvements**. There have been many improvements in our overall tracing story:
 
-    - We now use 128 bit trace ids
-    - There are some enhanced deployment options for Jaeger and Zipkin TBD: LINKS
-    - We now support sending trace data to LightStep
-    - Enabled full disablement of tracing for Mixer-backed services TBD: REPHRASE
+    -  You can now use 128 bit trace IDs.
+    -  Added some enhanced deployment options for [Jaeger](https://istio.io/docs/tasks/telemetry/distributed-tracing/jaeger/)
+    and [Zipkin](https://istio.io/docs/tasks/telemetry/distributed-tracing/zipkin/).
+    - Added support of sending trace data to [LightStep](https://preliminary.istio.io/docs/tasks/telemetry/distributed-tracing/lightstep/)
+    - Added the option to disable tracing for Mixer-backed services entirely. TBD: ADD LINK
     - Added policy decision-aware tracing. TBD: LINK
 
-- **Default TCP Metrics**. There are now default metrics for tracking TCP connections.
+- **Default TCP Metrics**. Added default metrics for tracking TCP connections.
 
 ## Configuration management
 
-- **Galley**. Galley is now used as the primary config ingestion and distribution mechanism within Istio. It provides
-a robust model to validate, transform, and distribute configuration state to Istio components, insulating the components
+- **Galley**. Added [Galley](https://istio.io/docs/concepts/what-is-istio/#galley) as the primary configuration ingestion and distribution mechanism within Istio. It provides
+a robust model to validate, transform, and distribute configuration state to Istio components insulating the Istio components
 from Kubernetes details. Galley uses the [Mesh Configuration Protocol (MCP)](https://github.com/istio/api/tree/{{< source_branch_name >}}/mcp) to interact with components. TBD: LINK TO MCP
 
-- **Monitoring Port**. Galley's default monitoring port was changed from 9093 to 15014.
+- **Monitoring Port**. Changed Galley's default monitoring port from 9093 to 15014.
 
 ## `istioctl` and `kubectl`
 
-- **Validate Command**. Added the [`istioctl validate`](/docs/reference/commands/istioctl/#istioctl-validate) command for offline validation of Istio Kubernetes resources. This replaces
+- **Validate Command**. Added the [`istioctl validate`](/docs/reference/commands/istioctl/#istioctl-validate)
+  command for offline validation of Istio Kubernetes resources.
 
 - **Verify-Install Command**. Added the [`istioctl experimental verify-install`](/docs/reference/commands/istioctl/#istioctl-experimental-verify-install) command to verify the status of an 
 Istio installation given a specified installation YAML file.
