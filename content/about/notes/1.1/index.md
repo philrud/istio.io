@@ -67,7 +67,7 @@ a richer visualization experience. See the [Kiali Task](/docs/tasks/telemetry/ki
 an incoming request's headers and routing. TBD: LINK
 
 - **Out of Process Adapters**. The out-of-process adapter functionality is now ready for production
-use. TBD: LINK
+TBD: LINK
  
 - **Tracing Improvements**. There have been many improvements in our overall tracing story:
 
