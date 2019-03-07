@@ -98,4 +98,4 @@ Istio installation given a specified installation YAML file.
 The `istioctl gen-deploy` command is also being deprecated. Use a [`helm template`](/docs/setup/kubernetes/install/helm/#option-1-install-with-helm-via-helm-template) instead.
 This command will be removed completely in the 1.2 release.
 
-- **Short Commands**. 'kubectl' now includes short commands for gateways, virtual services, destination rules and service entries.
+- **Short Commands**. Included short commands in 'kubectl' for gateways, virtual services, destination rules and service entries. TBD: ADD LINK
