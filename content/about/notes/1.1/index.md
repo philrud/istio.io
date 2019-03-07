@@ -95,7 +95,7 @@ from Kubernetes details. Galley uses the [Mesh Configuration Protocol (MCP)](htt
 Istio installation given a specified installation YAML file.
 
 - **Deprecated Commands**. Deprecated the `istioctl create`, `istioctl replace`, `istioctl get`, and `istioctl delete` commands. Use the [`kubectl`](https://kubernetes.io/docs/tasks/tools/install-kubectl) equivalents instead.
-The `istioctl gen-deploy` command is also being deprecated. Use a [`helm template`](/docs/setup/kubernetes/install/helm/#option-1-install-with-helm-via-helm-template) instead.
+Deprecated the `istioctl gen-deploy` command too. Use a [`helm template`](/docs/setup/kubernetes/install/helm/#option-1-install-with-helm-via-helm-template) instead.
 This command will be removed completely in the 1.2 release.
 
 - **Short Commands**. Included short commands in 'kubectl' for gateways, virtual services, destination rules and service entries. TBD: ADD LINK
