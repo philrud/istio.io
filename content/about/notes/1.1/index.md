@@ -91,7 +91,7 @@ from Kubernetes details. Galley uses the [Mesh Configuration Protocol (MCP)](htt
 
 - **Validate Command**. Added the [`istioctl validate`](/docs/reference/commands/istioctl/#istioctl-validate) command for offline validation of Istio Kubernetes resources. This replaces
 
-- **Verify-Install Command**. Added the [`istioctl experimental verify-install`](/docs/reference/commands/istioctl/#istioctl-experimental-verify-install) command used to verify the status of an 
+- **Verify-Install Command**. Added the [`istioctl experimental verify-install`](/docs/reference/commands/istioctl/#istioctl-experimental-verify-install) command to verify the status of an 
 Istio installation given a specified installation YAML file.
 
 - **Deprecated Commands**. Deprecated the `istioctl create`, `istioctl replace`, `istioctl get`, and `istioctl delete` commands. Use the [`kubectl`](https://kubernetes.io/docs/tasks/tools/install-kubectl) equivalents instead.
