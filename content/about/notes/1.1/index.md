@@ -55,7 +55,7 @@ TBD: LINK
 - **Kiali**. Replaced the Service Graph addon](https://github.com/istio/istio/issues/9066) with [Kiali](https://www.kiali.io) to provide
 a richer visualization experience. See the [Kiali Task](/docs/tasks/telemetry/kiali/) for more details.
 
-- **Reduced Overhead**. There have been several performance and scale improvements including:
+- **Reduced Overhead**. Added several performance and scale improvements including:
 
     - Significant reduction in default collection of Envoy-generated statistics (configurable via annotations)
 
