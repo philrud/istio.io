@@ -40,7 +40,7 @@ for migration instructions.
 
 ## Multiclusters
 
-- **Non-Routable L3 Networks**. A single Istio control plane can now be used in multicluster environments with non-routable
+- **Non-Routable L3 Networks**. Enabled using a single Istio control plane in multicluster environments with non-routable
 L3 networks.
 TBD: LINK
 
