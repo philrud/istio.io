@@ -31,6 +31,8 @@ TBD: presumbly in Helm?
 
 - **Simpler Service Entry Resources**. Reduced the need to bind virtual services to service entry resources greatly simplifying the resources.
 
+- **Istio Ingress Deprecated**. Previously deprecated Istio ingress has been removed. Refer to [Securing Kubernetes Ingress with Cert-Manager](/docs/examples/advanced-gateways/ingress-certmgr/) example for more details on how to use Kubernetes Ingress resources with [gateways](/docs/concepts/traffic-management/#gateways).
+
 - TBD: note about sidecar and export_to API.
 
 ## Security
