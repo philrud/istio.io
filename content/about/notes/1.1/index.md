@@ -39,8 +39,28 @@ TBD: presumbly in Helm?
 TBD: LINK TO DOC
 
 - **Cluster RBAC Configuration**.  Replaced the `RbacConfig` resource with the `ClusterRbacConfig` resource to implement the correct cluster scope.
-Refer to our guide on [Migrating the `RbacConfig` to `ClusterRbacConfig`](/docs/setup/kubernetes/upgrading-istio#migrating-the-rbacconfig-to-clusterrbacconfig)
+See [Migrating the `RbacConfig` to `ClusterRbacConfig`](/docs/setup/kubernetes/upgrading-istio#migrating-the-rbacconfig-to-clusterrbacconfig)
 for migration instructions.
+
+- **Identity Provisioning Through SDS**. Provides stronger security with on-node key generation and dynamic certificate rotation without restarting Envoy.
+See [Provisioning Identity through SDS](/docs/tasks/security/auth-sds) for more information.
+
+- **Authorization for TCP Services**. Supports authorization for TCP services in addition to HTTP and gRPC services. 
+See [Authorization for TCP Services](/docs/tasks/security/authz-tcp) for more information.
+
+- **Authorization for End-User Groups**. Allows authorization based on `groups` claim or any list-typed claims in JWT.
+See [Authorization for groups and list claims](/docs/tasks/security/rbac-groups/) for more information.
+
+- **End-User Authentication with Per-Path Requirements**. Allows you to enable or disable JWT authentication based on the request path.
+See [End-user authentication with per-path requirements](/docs/tasks/security/authn-policy/#end-user-authentication-with-per-path-requirements) for 
+more information.
+
+- **External Certificate Management on Ingress Gateway Controller**. Dynamically loads and rotates external certificates.
+
+- **Vault PKI Integration**. Provides stronger security with Vault-protected signing keys and facilitates integration with existing Vault PKIs.
+See [Istio Vault CA Integration](/docs/tasks/security/vault-ca) for more information.
+
+- **Customized (non `cluster.local`) Trust Domains**. Supports organization- or cluster-specific trust domains in the identities.
 
 ## Multiclusters
 
